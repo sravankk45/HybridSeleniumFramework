@@ -3,11 +3,18 @@
 <suite name="Failed suite [FREE CRM Application Test Automation Test Suite]">
   <test name="CRM Tests(failed)">
     <classes>
+      <class name="com.crm.qa.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="HomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.HomePageTest -->
       <class name="com.crm.qa.tests.LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
-          <include name="crmLogoImageTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.qa.tests.LoginTest -->
