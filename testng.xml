@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FREE CRM Application Test Automation Test Suite">
 
+	<listeners>
+		<listener class-name="com.crm.qa.reports.ExtentReporter" />
+	</listeners>
+	
 	<test name="CRM Tests">
 		<classes>
 		<class name="com.crm.qa.tests.HomePageTest"></class>
